@@ -651,8 +651,18 @@
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-
-
+    <style media="all" type="text/css">
+div.hidden {
+    display: none;
+}
+    </style>
+    <script type="text/javascript">
+$(function() {
+    $("button#CTRL_PASSED_TESTS").on('click', function() {
+        console.log("CTRL_PASSED_TESTS was clicked")
+     })
+});
+    </script>
     </head>
     <body>
       <h2>Execution Environment
@@ -695,9 +705,14 @@
                             </span>
                           </td>
                         </tr>
+                        <tr>
+                            <th>Passed Tests</th>
+                            <td><button id="CTRL_PASSED_TESTS">Don't show!</button></td>
+                        </tr>
                     </tbody>
                 </table>
-                <div id="s1-t1" class="test">
+
+                <div id="s1-t1" class="test hidden">
                     <div class="element-header" onclick="toggleTest('s1-t1')" title="Busstops Name OP/Test Cases/openBrouser">
                       <span class="passed">TEST CASE:
                       </span>
