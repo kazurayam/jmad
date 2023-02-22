@@ -660,6 +660,14 @@ div.hidden {
 $(function() {
     $("button#CTRL_PASSED_TESTS").on('click', function() {
         console.log("CTRL_PASSED_TESTS was clicked")
+        $('div.test').each(function(){
+            console.log("id=" + $(this).attr('id') + " has class=hidden:" + $(this).hasClass("hidden"));
+            if ($(this).hasClass('hidden')) {
+                $(this).removeClass('hidden');
+            } else {
+                $(this).addClass('hidden');
+            }
+        });
      })
 });
     </script>
