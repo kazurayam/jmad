@@ -659,15 +659,29 @@ div.hidden {
     <script type="text/javascript">
 $(function() {
     $("button#CTRL_PASSED_TESTS").on('click', function() {
-        console.log("CTRL_PASSED_TESTS was clicked")
+        console.log("the button was clicked ----------------")
+        var flag = false;
+        if ($(this).text() == 'Show the PASSED') {
+            flag = true;
+        } else {
+            flag = false;
+        }
         $('div.test').each(function(){
-            console.log("id=" + $(this).attr('id') + " has class=hidden:" + $(this).hasClass("hidden"));
-            if ($(this).hasClass('hidden')) {
-                $(this).removeClass('hidden');
-            } else {
-                $(this).addClass('hidden');
+            console.log("id=" + $(this).attr('id'));
+            console.log($('div.element-header > span:first', this).hasClass('passed'))
+            if ($('div.element-header > span:first', this).hasClass('passed')) {
+                if (flag) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
             }
         });
+        if (flag) {
+            $(this).html('Hide the PASSED')
+        } else {
+            $(this).html('Show the PASSED')
+        }
      })
 });
     </script>
@@ -713,14 +727,12 @@ $(function() {
                             </span>
                           </td>
                         </tr>
-                        <tr>
-                            <th>Passed Tests</th>
-                            <td><button id="CTRL_PASSED_TESTS">Don't show!</button></td>
-                        </tr>
                     </tbody>
                 </table>
 
-                <div id="s1-t1" class="test hidden">
+                <p><button id="CTRL_PASSED_TESTS">Hide the PASSED</button></p>
+
+                <div id="s1-t1" class="test">
                     <div class="element-header" onclick="toggleTest('s1-t1')" title="Busstops Name OP/Test Cases/openBrouser">
                       <span class="passed">TEST CASE:
                       </span>
