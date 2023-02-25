@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verifyBusStop</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>287687fd-de26-4a04-aa21-51f8dc60216d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b615d7b2-83d8-4fe7-81f7-a16ee26939d9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b615d7b2-83d8-4fe7-81f7-a16ee26939d9</id>
+      <masked>false</masked>
+      <name>Bus_Stop</name>
+   </variable>
+</TestCaseEntity>
