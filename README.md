@@ -98,7 +98,7 @@ Here is a video how I operated this project:
 
 Katalon Studio offers [Data driven testing](https://docs.katalon.com/docs/author/data-driven-testing/data-driven-testing-with-katalon-studio). I suppose this featured is liked by users a lot. Once accustomed, users tend to create large data sets to drive their tests. For example, the [OP](https://forum.katalon.com/t/report-only-failed-tests-no-passed-tests-please/84556/5) created 2300 lines of data. I suppose he/she is not exceptional. Rather he/she is a typical user of "Data driven testing".
 
-The HTML Report that contains 2000 test cases becomes too large. The report is so large that it becomes useless. Anyone feels like to see only a few of FAILED tests amongst 2000. They do not like to wander in the mass. The report without filtering capability makes us frustrated.
+The HTML Report that contains 2000 test cases is too large. The report is so large that it becomes useless. Anyone feels like to see only a few of FAILED tests amongst 2000. They do not like to wander in the mass. The report without filtering capability makes us frustrated.
 
 However, I guess that *Katalon team would never address this issue* because I know in the last few years they have been busy for developing their TestOps product. They seem to find that improving the basic HTML report doesn't help profitting. I was worried that those Katalon users who like the "Data driven testing" would be left unsatisfied for more years to come.
 
