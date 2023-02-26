@@ -1,4 +1,8 @@
+
+
 # [Katalon Studio] Alternative Test Suite Execution which shows failed tests only
+
+- https://github.com/kazurayam/jmad
 
 This is a small Katalon Studio project for demonstration purpose.
 You can download the zip of this project from the [Releases page](), unzip it locally to open in your Katalon Studio.
@@ -92,11 +96,13 @@ Here is a video how I operated this project:
 
 ## Conclusion
 
-Katalon Studio offers [Data driven testing](https://docs.katalon.com/docs/author/data-driven-testing/data-driven-testing-with-katalon-studio). I suppose this featured is liked by users a lot. Users tend to create this feature with large data set. For example, the [OP](https://forum.katalon.com/t/report-only-failed-tests-no-passed-tests-please/84556/5) created 2300 lines. I suppose he is not exceptional. Rather he is a typical user of "Data driven testing".
+Katalon Studio offers [Data driven testing](https://docs.katalon.com/docs/author/data-driven-testing/data-driven-testing-with-katalon-studio). I suppose this featured is liked by users a lot. Once accustomed, users tend to create large data sets to drive their tests. For example, the [OP](https://forum.katalon.com/t/report-only-failed-tests-no-passed-tests-please/84556/5) created 2300 lines of data. I suppose he/she is not exceptional. Rather he/she is a typical user of "Data driven testing".
 
-The HTML Report that contains 2000 test cases becomes too large. It is so large that it is nearly useless with fitltering feature so that it shows only the failed test.
+The HTML Report that contains 2000 test cases becomes too large. The report is so large that it becomes useless. Anyone feels like to see only a few of FAILED tests amongst 2000. They do not like to wander in the mass. The report without filtering capability makes us frustrated.
 
-I guess, Katalon team would not address this issue because I know in the last few years they have done nothing to improve the built-in HTML report. I was worried that many Katalon users who like the "Data driven testing" would be left unsatisfied for years to go. Therefore I have worked out for this solution ["ReportFailedTestsOnly"](https://github.com/kazurayam/ReportFailedTestsOnly/releases). Please try it.
+However, I guess that *Katalon team would never address this issue* because I know in the last few years they have been busy for developing their TestOps product. They seem to find that improving the basic HTML report doesn't help profitting. I was worried that those Katalon users who like the "Data driven testing" would be left unsatisfied for more years to come.
+
+Therefore I have worked out for this 2nd-best solution ["ReportFailedTestsOnly"](https://github.com/kazurayam/ReportFailedTestsOnly/releases). Please try it.
 
 
 
